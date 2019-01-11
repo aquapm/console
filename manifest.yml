@@ -1,0 +1,21 @@
+---
+name: console
+short_desc: EScript CLI application
+options:
+- name: required
+  required: true
+- name: nonrequired
+  default: true
+- name: number
+  default: 123
+- name: string
+  default: string
+files:
+  base:
+  - config/config.exs
+  test: []
+  standalone:
+  - ".gitignore"
+  - ".formatter.exs"
+  - config/config.exs
+  - lib/$PROJECTC_NAME$.ex
