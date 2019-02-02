@@ -5,7 +5,7 @@ defmodule <%= @project_name_camel_case %>.MixProject do
     [
       app: :<%= @project_name %>,
       version: "0.1.0",
-      elixir: "~> 1.7",
+      elixir: "~> <%= @elixir_version.major %>.<%= @elixir_version.minor %>",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       escript: escript()

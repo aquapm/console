@@ -9,7 +9,6 @@
         "base": [
             "config/config.exs",
             ".formatter.exs",
-            ".gitignore",
             "mix.exs",
             "README.md",
             "lib/<%= @project_name %>/cli.ex"
@@ -19,6 +18,9 @@
             "config/dev.exs",
             "config/prod.exs",
             "test/test_helper.exs"
+        ],
+        "in_standalone?": [
+            ".gitignore"
         ]
     }
 }
