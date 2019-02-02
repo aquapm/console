@@ -1,21 +1,28 @@
-# Console
+# <%= @project_name_camel_case %>
 
 **TODO: Add description**
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `console` to your list of dependencies in `mix.exs`:
+Project can be built using:
 
-```elixir
-def deps do
-  [
-    {:console, "~> 0.1.0"}
-  ]
-end
+```bash
+$ mix escript.build
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/console](https://hexdocs.pm/console).
+command.
 
+It will generate `./<%= @project_name_camel_case %>` executable, that can be then called as common executable:
+
+```bash
+$ ./<%= @project_name_camel_case %>
+```
+
+This executable can be moved across entire system, or even be passed to another computers.
+
+```bash
+$ cp ./<%= @project_name_camel_case %> ~
+$ ~/<%= @project_name_camel_case %>
+```
+
+**NOTE!**: This executable requires installed **Erlang Virtual Machins** to be installed on the execution system.
