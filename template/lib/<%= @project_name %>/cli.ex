@@ -1,5 +1,5 @@
-defmodule Cons.CLI do
+defmodule <%= @project_name_camel_case %>.CLI do
   def main(_args) do
-    IO.puts("Welcome to the Cons CLI!")
+    IO.puts("Welcome to the <%= @project_name_camel_case %> CLI!")
   end
 end
